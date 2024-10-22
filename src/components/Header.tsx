@@ -89,7 +89,7 @@ const Header = () => {
             <ul className="flex gap-4">
               {menuOptions.map((option, index) => {
                 return (
-                  <li className="">
+                  <li key={index} className="">
                     <p
                       key={index}
                       className={`hidden md:block text-xl uppercase text-black`}
