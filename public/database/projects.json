@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "title": "Spotify web",
+    "image": {
+      "src": "/spotify-desktop.png",
+      "alt": "Spotify web on iPad device"
+    },
+    "technologies": [
+      {
+        "name": "React",
+        "src": "/react-icon.svg",
+        "background": true
+      },
+      {
+        "name": "Typescript",
+        "src": "/typescript-icon.svg",
+        "background": false
+      },
+      {
+        "name": "Tailwind",
+        "src": "/tailwind-icon.svg",
+        "background": true
+      },
+      {
+        "name": "Redux",
+        "src": "/redux-icon.svg",
+        "background": true
+      },
+      {
+        "name": "Spotify API",
+        "src": "/spotify-icon.svg"
+      }
+    ],
+    "description": "This project was built using the Spotify API. Users can log in with their Spotify accounts, search for songs, albums, artists and playlists. The app displays real-time data from the user's Spotify library and integrates seamlessly with Spotify features like music playback and recommendations.",
+    "external_links": [
+      {
+        "value": "Demo",
+        "href": "https://friceice.github.io/spotify-web/"
+      },
+      {
+        "value": "Github",
+        "href": "https://github.com/FriceIce/spotify-web"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Sorted Games",
+    "image": {
+      "src": "/sortedGames-desktop.png",
+      "alt": "Sported Games on desktop device"
+    },
+    "technologies": [
+      {
+        "name": "React",
+        "src": "/react-icon.svg",
+        "background": true
+      },
+      {
+        "name": "Typescript",
+        "src": "/typescript-icon.svg",
+        "background": false
+      },
+      {
+        "name": "Tailwind",
+        "src": "/tailwind-icon.svg",
+        "background": true
+      },
+      {
+        "name": "Redux",
+        "src": "/redux-icon.svg",
+        "background": true
+      },
+      {
+        "name": "Firebase",
+        "src": "/firebase-icon.svg",
+        "background": true
+      },
+      {
+        "name": "Free games API",
+        "src": "https://www.freetogame.com/assets/images/freetogame-logo.png",
+        "background": true
+      }
+    ],
+    "description": "This project is a free game platform built with React, Tailwind CSS, TypeScript, Firebase, and the Free Games API. The platform allows users to explore and discover free PC games, both browser-based and downloadable for Windows. Users can create an account to save their favorite games and manage game articles for future reference.",
+    "external_links": [
+      {
+        "value": "Demo",
+        "href": "https://friceice.github.io/SortedGames/"
+      },
+      {
+        "value": "Github",
+        "href": "https://github.com/FriceIce/sortedGames"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Trullo",
+    "image": {
+      "src": "/trullo-desktop.png",
+      "alt": "Trullo"
+    },
+    "technologies": [
+      {
+        "name": "NodeJS",
+        "src": "/nodeJS-icon.svg",
+        "background": true
+      },
+      {
+        "name": "ExpressJS",
+        "src": "/javascript-icon.svg",
+        "background": false
+      },
+      {
+        "name": "Typescript",
+        "src": "/typescript-icon.svg",
+        "background": false
+      },
+      {
+        "name": "MongoDB",
+        "src": "/mongoDB-icon.svg",
+        "background": false
+      }
+    ],
+    "description": "The application is designed as a RESTful API with multiple endpoints that support CRUD operations. These operations handle the exchange of information between the server and the database for projects, users, and tasks. Each user is assigned a role (either user or admin) through JWT tokens, which determines their permissions. Admin users have additional rights, allowing them to modify any user data in the database. Tasks are associated with specific projects, each of which maintains a list of related tasks. Whenever a task is created, updated, or deleted, the project is automatically updated to reflect these changes.",
+    "external_links": [
+      {
+        "value": "Github",
+        "href": "https://github.com/FriceIce/trullo"
+      }
+    ]
+  }
+]
