@@ -9,27 +9,27 @@
     "technologies": [
       {
         "name": "React",
-        "src": "/react-icon.svg",
+        "src": "icons/react-icon.svg",
         "background": true
       },
       {
         "name": "Typescript",
-        "src": "/typescript-icon.svg",
+        "src": "icons/typescript-icon.svg",
         "background": false
       },
       {
         "name": "Tailwind",
-        "src": "/tailwind-icon.svg",
+        "src": "icons/tailwind-icon.svg",
         "background": true
       },
       {
         "name": "Redux",
-        "src": "/redux-icon.svg",
+        "src": "icons/redux-icon.svg",
         "background": true
       },
       {
         "name": "Spotify API",
-        "src": "/spotify-icon.svg"
+        "src": "icons/spotify-icon.svg"
       }
     ],
     "description": "This project was built using the Spotify API. Users can log in with their Spotify accounts, search for songs, albums, artists and playlists. The app displays real-time data from the user's Spotify library and integrates seamlessly with Spotify features like music playback and recommendations.",
@@ -54,27 +54,27 @@
     "technologies": [
       {
         "name": "React",
-        "src": "/react-icon.svg",
+        "src": "icons/react-icon.svg",
         "background": true
       },
       {
         "name": "Typescript",
-        "src": "/typescript-icon.svg",
+        "src": "icons/typescript-icon.svg",
         "background": false
       },
       {
         "name": "Tailwind",
-        "src": "/tailwind-icon.svg",
+        "src": "icons/tailwind-icon.svg",
         "background": true
       },
       {
         "name": "Redux",
-        "src": "/redux-icon.svg",
+        "src": "icons/redux-icon.svg",
         "background": true
       },
       {
         "name": "Firebase",
-        "src": "/firebase-icon.svg",
+        "src": "icons/firebase-icon.svg",
         "background": true
       },
       {
@@ -105,22 +105,22 @@
     "technologies": [
       {
         "name": "NodeJS",
-        "src": "/nodeJS-icon.svg",
+        "src": "icons/nodeJS-icon.svg",
         "background": true
       },
       {
         "name": "ExpressJS",
-        "src": "/expressjs-icon.svg",
+        "src": "icons/expressjs-icon.svg",
         "background": false
       },
       {
         "name": "Typescript",
-        "src": "/typescript-icon.svg",
+        "src": "icons/typescript-icon.svg",
         "background": false
       },
       {
         "name": "MongoDB",
-        "src": "/mongoDB-icon.svg",
+        "src": "icons/mongoDB-icon.svg",
         "background": false
       }
     ],
