@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { Dispatch, useEffect, useState } from "react";
+import { MenuOption } from "../App";
 
 const menuVarients = {
   initial: {
@@ -57,10 +58,19 @@ const menuOptionsVarients = {
   },
 };
 
-const Header = () => {
+const Header = ({
+  setMenuOption,
+}: {
+  setMenuOption: Dispatch<React.SetStateAction<MenuOption>>;
+}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleMenu = () => setIsOpen((prev) => !prev);
-  const menuOptions = ["Home", "Projects", "About", "Contact"];
+  const menuOptions: Array<{ name: string; value: MenuOption }> = [
+    { name: "Home", value: "home" },
+    { name: "Projects", value: "projects" },
+    { name: "About", value: "about" },
+    { name: "Contact", value: "contact" },
+  ];
 
   //This useEffect is for mobile devices. It sets the bg color for the controls
   useEffect(() => {
@@ -73,10 +83,15 @@ const Header = () => {
   }, [isOpen]);
 
   return (
-    <header className="flex items-center justify-between h-16 p-4">
+    <header
+      className={`sticky inset-0 z-[2] flex items-center justify-between h-16 p-4
+      ${isOpen ? "bg-yellow-400" : "bg-white"}`}
+    >
       <div className="flex items-center gap-2">
         <div className="bg-yellow-400 rounded-full size-4" />
-        <p className="text-xl">Isak Tilahun</p>
+        <button className="text-xl" onClick={() => window.location.reload()}>
+          Isak Tilahun
+        </button>
       </div>
 
       <div>
@@ -90,12 +105,13 @@ const Header = () => {
               {menuOptions.map((option, index) => {
                 return (
                   <li key={index} className="">
-                    <p
+                    <button
                       key={index}
                       className={`hidden md:block text-xl uppercase text-black`}
+                      onClick={() => setMenuOption(option.value)}
                     >
-                      {option}
-                    </p>
+                      {option.name}
+                    </button>
                   </li>
                 );
               })}
@@ -129,12 +145,16 @@ const Header = () => {
                   return (
                     <div className="overflow-hidden">
                       <motion.div variants={linkVarients} className="">
-                        <p
+                        <button
                           key={index}
                           className={`md:hidden text-5xl uppercase text-black`}
+                          onClick={() => {
+                            setMenuOption(option.value);
+                            setIsOpen(false);
+                          }}
                         >
-                          {option}
-                        </p>
+                          {option.name}
+                        </button>
                       </motion.div>
                     </div>
                   );
