@@ -18,7 +18,10 @@ const Introduction = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-12">
+    <div
+      id="home"
+      className="flex flex-col lg:flex-row items-center gap-4 lg:gap-12 pt-20"
+    >
       <img
         src="/porfolio-pp.jfif"
         alt="profile image"

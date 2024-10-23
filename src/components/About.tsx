@@ -7,7 +7,7 @@ const paraph = [
 
 const About = () => {
   return (
-    <section className="space-y-10 lg:px-10">
+    <section id="about" className="space-y-10 lg:px-10 pt-20">
       <h2 className="text-6xl font-bold text-center">About</h2>
 
       <article className="space-y-4">

@@ -18,8 +18,14 @@ const contactInfo: { type: string; src: string; href: string }[] = [
 
 const Contact = () => {
   return (
-    <div className="space-y-6">
+    <div
+      id="contact"
+      className="bg-zinc-50 space-y-6 w-dvw h-full py-20 lg:py-60"
+    >
       <section className="">
+        <p className="text-center text-xs lg:text-base">
+          Searching for opportunities
+        </p>
         <h2 className="text-5xl lg:text-6xl font-bold text-center">
           Let's connect
         </h2>

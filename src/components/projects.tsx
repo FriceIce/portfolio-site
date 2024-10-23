@@ -2,12 +2,15 @@ import allProjects from "../../public/database/projects.json";
 
 const projects = () => {
   return (
-    <div className="w-screen px-4 flex flex-col space-y-24 py-10 bg-zinc-50">
-      <h2 className="text-6xl md:text-6xl font-bold w-max mx-auto border-b-4 border-black pb-4">
+    <div
+      id="projects"
+      className="w-screen px-4 flex flex-col space-y-24 py-10 bg-zinc-50"
+    >
+      <h2 className="text-6xl md:text-6xl font-bold w-max mx-auto border-b-4 border-black pb-4 pt-10">
         Projects
       </h2>
 
-      <section className="">
+      <section>
         <ul className={`mx-auto flex flex-col gap-32 lg:gap-64 items-center`}>
           {allProjects.map((project: Project) => {
             return (
