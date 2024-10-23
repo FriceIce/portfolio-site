@@ -1,0 +1,74 @@
+[
+  {
+    "name": "HTML5",
+    "src": "/html5-icon.svg"
+  },
+  {
+    "name": "CSS3",
+    "src": "/css3-icon.svg"
+  },
+  {
+    "name": "Git",
+    "src": "/git-icon.svg"
+  },
+  {
+    "name": "JavaScript",
+    "src": "/javascript-icon.svg"
+  },
+  {
+    "name": "Typescript",
+    "src": "/typescript-icon.svg"
+  },
+  {
+    "name": "React",
+    "src": "/react-icon.svg"
+  },
+  {
+    "name": "Redux",
+    "src": "/redux-icon.svg"
+  },
+  {
+    "name": "Tailwind",
+    "src": "/tailwind-icon.svg"
+  },
+  {
+    "name": "Firebase",
+    "src": "/firebase-icon.svg"
+  },
+  {
+    "name": "Next.js",
+    "src": "/nextjs-icon.svg"
+  },
+  {
+    "name": "NodeJS",
+    "src": "/nodeJS-icon.svg"
+  },
+  {
+    "name": "Express",
+    "src": "/expressjs-icon.svg"
+  },
+  {
+    "name": "PostgreSQL",
+    "src": "/postgresql-icon.svg"
+  },
+  {
+    "name": "MongoDB",
+    "src": "/mongoDB-icon.svg"
+  },
+  {
+    "name": "GraphQL",
+    "src": "/graphql-icon.svg"
+  },
+  {
+    "name": "VueJS",
+    "src": "/vuejs-icon.svg"
+  },
+  {
+    "name": "Figma",
+    "src": "/figma-icon.svg"
+  },
+  {
+    "name": "Github",
+    "src": "/github.svg"
+  }
+]

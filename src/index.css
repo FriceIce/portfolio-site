@@ -31,3 +31,8 @@ body {
   margin-inline: auto;
   font-family: "Plus Jakarta Sans", "Poppins", "arial", sans-serif;
 }
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+}
