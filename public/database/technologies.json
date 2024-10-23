@@ -1,74 +1,74 @@
 [
   {
     "name": "HTML5",
-    "src": "/html5-icon.svg"
+    "src": "/icons/html5-icon.svg"
   },
   {
     "name": "CSS3",
-    "src": "/css3-icon.svg"
+    "src": "/icons/css3-icon.svg"
   },
   {
     "name": "Git",
-    "src": "/git-icon.svg"
+    "src": "/icons/git-icon.svg"
   },
   {
     "name": "JavaScript",
-    "src": "/javascript-icon.svg"
+    "src": "/icons/javascript-icon.svg"
   },
   {
     "name": "Typescript",
-    "src": "/typescript-icon.svg"
+    "src": "/icons/typescript-icon.svg"
   },
   {
     "name": "React",
-    "src": "/react-icon.svg"
+    "src": "/icons/react-icon.svg"
   },
   {
     "name": "Redux",
-    "src": "/redux-icon.svg"
+    "src": "/icons/redux-icon.svg"
   },
   {
     "name": "Tailwind",
-    "src": "/tailwind-icon.svg"
+    "src": "/icons/tailwind-icon.svg"
   },
   {
     "name": "Firebase",
-    "src": "/firebase-icon.svg"
+    "src": "/icons/firebase-icon.svg"
   },
   {
     "name": "Next.js",
-    "src": "/nextjs-icon.svg"
+    "src": "/icons/nextjs-icon.svg"
   },
   {
     "name": "NodeJS",
-    "src": "/nodeJS-icon.svg"
+    "src": "/icons/nodeJS-icon.svg"
   },
   {
     "name": "Express",
-    "src": "/expressjs-icon.svg"
+    "src": "/icons/expressjs-icon.svg"
   },
   {
     "name": "PostgreSQL",
-    "src": "/postgresql-icon.svg"
+    "src": "/icons/postgresql-icon.svg"
   },
   {
     "name": "MongoDB",
-    "src": "/mongoDB-icon.svg"
+    "src": "/icons/mongoDB-icon.svg"
   },
   {
     "name": "GraphQL",
-    "src": "/graphql-icon.svg"
+    "src": "/icons/graphql-icon.svg"
   },
   {
     "name": "VueJS",
-    "src": "/vuejs-icon.svg"
+    "src": "/icons/vuejs-icon.svg"
   },
   {
     "name": "Figma",
-    "src": "/figma-icon.svg"
+    "src": "/icons/figma-icon.svg"
   },
   {
     "name": "Github",
-    "src": "/github.svg"
+    "src": "/icons/github.svg"
   }
 ]

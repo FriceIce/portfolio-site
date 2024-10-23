@@ -4,13 +4,13 @@ const Introduction = () => {
   const subtitle = ["Web Developer"];
   const url_paths = [
     {
-      src: "/linkedin-icon.png",
+      src: "/icons/linkedin-icon.png",
       title: "LinkedIn",
       href: "https://www.linkedin.com/in/isak-tilahun-27b242280/",
       alt: "LinkedIn icon",
     },
     {
-      src: "/github.svg",
+      src: "/icons/github.svg",
       title: "GitHub",
       href: "https://github.com/friceice",
       alt: "GitHub icon",
