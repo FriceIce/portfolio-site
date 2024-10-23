@@ -3,9 +3,9 @@ import allProjects from "../../public/database/projects.json";
 const projects = () => {
   return (
     <div className="w-screen px-4 flex flex-col space-y-24 py-10 bg-zinc-50">
-      <h1 className="text-6xl md:text-6xl font-bold w-max mx-auto border-b-4 border-black pb-4">
+      <h2 className="text-6xl md:text-6xl font-bold w-max mx-auto border-b-4 border-black pb-4">
         Projects
-      </h1>
+      </h2>
 
       <section className="">
         <ul className={`mx-auto flex flex-col gap-32 lg:gap-64 items-center`}>
@@ -22,15 +22,15 @@ const projects = () => {
                 />
 
                 <div className="space-y-5 max-w-[500px]">
-                  <h2 className="text-3xl font-bold text-center lg:text-start">
+                  <h3 className="text-3xl font-bold text-center lg:text-start">
                     {project.title}
-                  </h2>
+                  </h3>
                   <section className="flex gap-2 flex-wrap">
                     {project.technologies.map((tech, index) => {
                       return (
                         <div
                           key={index}
-                          className={`flex items-center bg-neutral-200 py-2 px-3 rounded-full shadow
+                          className={`flex items-center bg-neutral-200 py-2 px-3 rounded shadow
                         ${
                           tech.name === "MongoDB"
                             ? "gap-0 flex-row-reverse"
