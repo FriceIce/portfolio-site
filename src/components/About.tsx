@@ -6,18 +6,6 @@ const paraph = [
   "What I'm most proud of isn't just the projects I’ve chosen to showcase here, but the courage I’ve shown in taking the leap into a completely new career field. Making the switch from a hands-on, technical job to the world of coding has been both exciting and rewarding. Through this journey, I’ve learned that my curiosity and willingness to dive into the unknown are my greatest strengths.",
 ];
 
-const aboutVariant = {
-  initial: {
-    x: "15%",
-  },
-  animate: {
-    x: 0,
-    transition: {
-      duration: 0.5,
-    },
-  },
-};
-
 const techVariant = {
   initial: {
     y: 100,
@@ -35,13 +23,7 @@ const About = () => {
     <section id="about" className="space-y-10 lg:px-10 pt-20">
       <h2 className="text-6xl font-bold text-center">About</h2>
 
-      <motion.article
-        variants={aboutVariant}
-        initial="initial"
-        whileInView="animate"
-        viewport={{ once: true }}
-        className="space-y-4"
-      >
+      <article className="space-y-4">
         <h3 className="text-3xl lg:text-4xl font bold text-yellow-400 font-bold">
           A bit about me
         </h3>
@@ -54,7 +36,7 @@ const About = () => {
             );
           })}
         </div>
-      </motion.article>
+      </article>
 
       <div className="space-y-4">
         <h3 className="text-3xl lg:text-4xl text-yellow-400 font-bold">
