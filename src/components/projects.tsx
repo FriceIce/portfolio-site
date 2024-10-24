@@ -1,4 +1,5 @@
 import allProjects from "../../public/database/projects.json";
+import { motion } from "framer-motion";
 
 const projects = () => {
   return (
@@ -6,7 +7,7 @@ const projects = () => {
       id="projects"
       className="w-screen px-4 flex flex-col space-y-24 py-10 bg-zinc-50"
     >
-      <h2 className="text-6xl md:text-6xl font-bold w-max mx-auto border-b-4 border-black pb-4 pt-10">
+      <h2 className="text-6xl md:text-6xl font-bold w-max mx-auto pt-10">
         Projects
       </h2>
 
@@ -14,7 +15,11 @@ const projects = () => {
         <ul className={`mx-auto flex flex-col gap-32 lg:gap-64 items-center`}>
           {allProjects.map((project: Project) => {
             return (
-              <li
+              <motion.li
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
                 key={project.id}
                 className="flex flex-col gap-6 lg:gap-10 lg:flex-row mx-auto"
               >
@@ -25,38 +30,41 @@ const projects = () => {
                 />
 
                 <div className="space-y-5 max-w-[500px]">
-                  <h3 className="text-3xl font-bold text-center lg:text-start">
+                  <h3 className="text-3xl lg:text-5xl font-bold text-center lg:text-start w-max">
                     {project.title}
                   </h3>
-                  <section className="flex gap-2 flex-wrap">
-                    {project.technologies.map((tech, index) => {
-                      return (
-                        <div
-                          key={index}
-                          className={`flex items-center bg-[#f0f0f0] py-2 px-3 rounded shadow
-                        ${
-                          tech.name === "MongoDB"
-                            ? "gap-0 flex-row-reverse"
-                            : "gap-1"
-                        }`}
-                        >
-                          <p className="text-xs md:text-sm font-semibold">
-                            {tech.name}
-                          </p>
-                          <div
-                            className={`${
-                              tech.background && "bg-black"
-                            } rounded p-[1px]`}
+                  <section className="space-y-2">
+                    <h4 className="text-xl lg:text-2xl font-bold text-yellow-400">
+                      Technologies used
+                    </h4>
+                    <ul className="flex gap-2 flex-wrap">
+                      {project.technologies.map((tech, index) => {
+                        return (
+                          <li
+                            key={index}
+                            className={`flex items-center bg-[#f0f0f0] py-2 px-3 rounded shadow
+                          ${
+                            tech.name === "MongoDB"
+                              ? "gap-0 flex-row-reverse"
+                              : "gap-1"
+                          }`}
                           >
-                            <img
-                              src={tech.src}
-                              alt={tech.name}
-                              className="size-5 object-contain"
-                            />
-                          </div>
-                        </div>
-                      );
-                    })}
+                            <p className="text-xs font-semibold">{tech.name}</p>
+                            <div
+                              className={`${
+                                tech.background && "bg-black"
+                              } rounded p-[1px]`}
+                            >
+                              <img
+                                src={tech.src}
+                                alt={tech.name}
+                                className="size-5 object-contain"
+                              />
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ul>
                   </section>
                   <p className="text-sm lg:text-base leading-relaxed lg:leading-loose">
                     {project.description}
@@ -66,7 +74,7 @@ const projects = () => {
                       return (
                         <button
                           key={index}
-                          className={`px-3 py-2 rounded-md border-2 border-transparent bg-yellow-400 lg:hover:bg-white lg:border-yellow-400 lg:hover:scale-105 lg:hover:shadow transition-all`}
+                          className={`px-3 py-2 rounded-md border-2 bg-[#f9fafb] lg:hover:bg-yellow-400 border-yellow-400 lg:hover:scale-105 lg:hover:shadow transition-all`}
                         >
                           <a href={obj.href} target="_blank">
                             {obj.value}
@@ -76,7 +84,7 @@ const projects = () => {
                     })}
                   </div>
                 </div>
-              </li>
+              </motion.li>
             );
           })}
         </ul>
