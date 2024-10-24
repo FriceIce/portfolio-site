@@ -4,13 +4,13 @@ const Introduction = () => {
   const subtitle = ["Web Developer"];
   const url_paths = [
     {
-      src: "/icons/linkedin-icon.png",
+      src: "/portfolio-site/icons/linkedin-icon.png",
       title: "LinkedIn",
       href: "https://www.linkedin.com/in/isak-tilahun-27b242280/",
       alt: "LinkedIn icon",
     },
     {
-      src: "/icons/github.svg",
+      src: "/portfolio-site/icons/github.svg",
       title: "GitHub",
       href: "https://github.com/friceice",
       alt: "GitHub icon",
@@ -23,7 +23,7 @@ const Introduction = () => {
       className="flex flex-col lg:flex-row items-center gap-4 lg:gap-12 pt-20"
     >
       <img
-        src="/porfolio-pp.jfif"
+        src="/portfolio-site/porfolio-pp.jfif"
         alt="profile image"
         className="size-48 md:size-64 rounded-full md:mb-9"
       />

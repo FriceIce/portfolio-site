@@ -1,74 +1,74 @@
 [
   {
     "name": "HTML5",
-    "src": "/icons/html5-icon.svg"
+    "src": "/portfolio-site/icons/html5-icon.svg"
   },
   {
     "name": "CSS3",
-    "src": "/icons/css3-icon.svg"
+    "src": "/portfolio-site/icons/css3-icon.svg"
   },
   {
     "name": "Git",
-    "src": "/icons/git-icon.svg"
+    "src": "/portfolio-site/icons/git-icon.svg"
   },
   {
     "name": "JavaScript",
-    "src": "/icons/javascript-icon.svg"
+    "src": "/portfolio-site/icons/javascript-icon.svg"
   },
   {
     "name": "Typescript",
-    "src": "/icons/typescript-icon.svg"
+    "src": "/portfolio-site/icons/typescript-icon.svg"
   },
   {
     "name": "React",
-    "src": "/icons/react-icon.svg"
+    "src": "/portfolio-site/icons/react-icon.svg"
   },
   {
     "name": "Redux",
-    "src": "/icons/redux-icon.svg"
+    "src": "/portfolio-site/icons/redux-icon.svg"
   },
   {
     "name": "Tailwind",
-    "src": "/icons/tailwind-icon.svg"
+    "src": "/portfolio-site/icons/tailwind-icon.svg"
   },
   {
     "name": "Firebase",
-    "src": "/icons/firebase-icon.svg"
+    "src": "/portfolio-site/icons/firebase-icon.svg"
   },
   {
     "name": "Next.js",
-    "src": "/icons/nextjs-icon.svg"
+    "src": "/portfolio-site/icons/nextjs-icon.svg"
   },
   {
     "name": "NodeJS",
-    "src": "/icons/nodeJS-icon.svg"
+    "src": "/portfolio-site/icons/nodeJS-icon.svg"
   },
   {
     "name": "Express",
-    "src": "/icons/expressjs-icon.svg"
+    "src": "/portfolio-site/icons/expressjs-icon.svg"
   },
   {
     "name": "PostgreSQL",
-    "src": "/icons/postgresql-icon.svg"
+    "src": "/portfolio-site/icons/postgresql-icon.svg"
   },
   {
     "name": "MongoDB",
-    "src": "/icons/mongoDB-icon.svg"
+    "src": "/portfolio-site/icons/mongoDB-icon.svg"
   },
   {
     "name": "GraphQL",
-    "src": "/icons/graphql-icon.svg"
+    "src": "/portfolio-site/icons/graphql-icon.svg"
   },
   {
     "name": "VueJS",
-    "src": "/icons/vuejs-icon.svg"
+    "src": "/portfolio-site/icons/vuejs-icon.svg"
   },
   {
     "name": "Figma",
-    "src": "/icons/figma-icon.svg"
+    "src": "/portfolio-site/icons/figma-icon.svg"
   },
   {
     "name": "Github",
-    "src": "/icons/github.svg"
+    "src": "/portfolio-site/icons/github.svg"
   }
 ]

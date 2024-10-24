@@ -13,7 +13,7 @@ const projects = () => {
 
       <section>
         <ul className={`mx-auto flex flex-col gap-32 lg:gap-64 items-center`}>
-          {allProjects.map((project: Project) => {
+          {allProjects.map((project) => {
             return (
               <motion.li
                 initial={{ opacity: 0, y: 50 }}
@@ -94,22 +94,3 @@ const projects = () => {
 };
 
 export default projects;
-
-interface Project {
-  id: number;
-  title: string;
-  image: {
-    src: string;
-    alt: string;
-  };
-  technologies: Array<{
-    name: string;
-    src: string;
-    background: boolean;
-  }>;
-  description: string;
-  external_links: Array<{
-    value: string;
-    href: string;
-  }>;
-}

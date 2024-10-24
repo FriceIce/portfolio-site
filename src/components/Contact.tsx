@@ -1,17 +1,17 @@
 const contactInfo: { type: string; src: string; href: string }[] = [
   {
     type: "Email",
-    src: "/icons/email-icon.svg",
+    src: "/portfolio-site/icons/email-icon.svg",
     href: "mailto:Tilhun.Isak@gmail.com",
   },
   {
     type: "LinkedIn",
-    src: "/icons/linkedin-icon.svg",
+    src: "/portfolio-site/icons/linkedin-icon.svg",
     href: "https://www.linkedin.com/in/isak-tilahun-27b242280/",
   },
   {
     type: "Instagram",
-    src: "/icons/instagram-icon.svg",
+    src: "/portfolio-site/icons/instagram-icon.svg",
     href: "https://www.instagram.com/letzgochamp/",
   },
 ];

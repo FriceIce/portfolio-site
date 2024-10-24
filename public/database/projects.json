@@ -3,33 +3,33 @@
     "id": 1,
     "title": "Spotify web",
     "image": {
-      "src": "/spotify-desktop.png",
+      "src": "/portfolio-site/spotify-desktop.png",
       "alt": "Spotify web on iPad device"
     },
     "technologies": [
       {
         "name": "React",
-        "src": "/icons/react-icon.svg",
+        "src": "/portfolio-site/icons/react-icon.svg",
         "background": true
       },
       {
         "name": "Typescript",
-        "src": "/icons/typescript-icon.svg",
+        "src": "/portfolio-site/icons/typescript-icon.svg",
         "background": false
       },
       {
         "name": "Tailwind",
-        "src": "/icons/tailwind-icon.svg",
+        "src": "/portfolio-site/icons/tailwind-icon.svg",
         "background": true
       },
       {
         "name": "Redux",
-        "src": "/icons/redux-icon.svg",
+        "src": "/portfolio-site/icons/redux-icon.svg",
         "background": true
       },
       {
         "name": "Spotify API",
-        "src": "/icons/spotify-icon.svg"
+        "src": "/portfolio-site/icons/spotify-icon.svg"
       }
     ],
     "description": "This project was built using the Spotify API. Users can log in with their Spotify accounts, search for songs, albums, artists and playlists. The app displays real-time data from the user's Spotify library and integrates seamlessly with Spotify features like music playback and recommendations.",
@@ -48,33 +48,33 @@
     "id": 2,
     "title": "Sorted Games",
     "image": {
-      "src": "/sortedGames-desktop.png",
+      "src": "/portfolio-site/sortedGames-desktop.png",
       "alt": "Sported Games on desktop device"
     },
     "technologies": [
       {
         "name": "React",
-        "src": "/icons/react-icon.svg",
+        "src": "/portfolio-site/icons/react-icon.svg",
         "background": true
       },
       {
         "name": "Typescript",
-        "src": "/icons/typescript-icon.svg",
+        "src": "/portfolio-site/icons/typescript-icon.svg",
         "background": false
       },
       {
         "name": "Tailwind",
-        "src": "/icons/tailwind-icon.svg",
+        "src": "/portfolio-site/icons/tailwind-icon.svg",
         "background": true
       },
       {
         "name": "Redux",
-        "src": "/icons/redux-icon.svg",
+        "src": "/portfolio-site/icons/redux-icon.svg",
         "background": true
       },
       {
         "name": "Firebase",
-        "src": "/icons/firebase-icon.svg",
+        "src": "/portfolio-site/icons/firebase-icon.svg",
         "background": true
       },
       {
@@ -99,28 +99,28 @@
     "id": 3,
     "title": "Trullo",
     "image": {
-      "src": "/trullo-desktop.png",
+      "src": "/portfolio-site/trullo-desktop.png",
       "alt": "Trullo"
     },
     "technologies": [
       {
         "name": "NodeJS",
-        "src": "/icons/nodeJS-icon.svg",
+        "src": "/portfolio-site/icons/nodeJS-icon.svg",
         "background": true
       },
       {
         "name": "ExpressJS",
-        "src": "/icons/expressjs-icon.svg",
+        "src": "/portfolio-site/icons/expressjs-icon.svg",
         "background": false
       },
       {
         "name": "Typescript",
-        "src": "/icons/typescript-icon.svg",
+        "src": "/portfolio-site/icons/typescript-icon.svg",
         "background": false
       },
       {
         "name": "MongoDB",
-        "src": "/icons/mongoDB-icon.svg",
+        "src": "/portfolio-site/icons/mongoDB-icon.svg",
         "background": false
       }
     ],
