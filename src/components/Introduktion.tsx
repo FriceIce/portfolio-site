@@ -39,7 +39,7 @@ const Introduction = () => {
         <div className="space-y-4 w-[265px]">
           <div className="group flex gap-4 font-semibold text-sm w-max">
             <a
-              href="/fakeStuff.pdf"
+              href="./CV-Isak-Tilahun.pdf"
               download
               className="border border-transparent transition-all bg-yellow-400 md:hover:scale-105 px-4 py-3 rounded-full cursor-pointer"
             >
