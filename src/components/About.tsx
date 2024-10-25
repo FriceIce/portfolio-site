@@ -8,7 +8,7 @@ const paraph = [
 
 const techVariant = {
   initial: {
-    y: 100,
+    y: 50,
   },
   animate: {
     y: 0,

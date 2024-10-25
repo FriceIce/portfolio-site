@@ -16,8 +16,8 @@ const projects = () => {
           {allProjects.map((project) => {
             return (
               <motion.li
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 50, scaleY: 0.9, scaleX: 0.9 }}
+                whileInView={{ opacity: 1, y: 0, scaleY: 1, scaleX: 1 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
                 key={project.id}
