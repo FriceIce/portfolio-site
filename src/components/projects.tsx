@@ -30,7 +30,7 @@ const projects = () => {
                 />
 
                 <div className="space-y-5 max-w-[500px]">
-                  <h3 className="text-3xl lg:text-5xl font-bold text-center lg:text-start w-max">
+                  <h3 className="text-3xl lg:text-5xl mx-auto lg:mx-0 w-max font-extrabold">
                     {project.title}
                   </h3>
                   <section className="space-y-2">
