@@ -2,7 +2,7 @@ import { useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
-import Introduction from "./components/Introduktion";
+import Introduction from "./components/Introduction";
 import Projects from "./components/projects";
 import useIsMounted from "./hooks/useIsMounted";
 
