@@ -9,8 +9,7 @@
     "technologies": [
       {
         "name": "React",
-        "src": "/portfolio-site/icons/react-icon.svg",
-        "background": true
+        "src": "/portfolio-site/icons/react-icon.svg"
       },
       {
         "name": "Typescript",
@@ -19,20 +18,27 @@
       },
       {
         "name": "Tailwind",
-        "src": "/portfolio-site/icons/tailwind-icon.svg",
-        "background": true
+        "src": "/portfolio-site/icons/tailwind-icon.svg"
       },
       {
         "name": "Redux",
-        "src": "/portfolio-site/icons/redux-icon.svg",
-        "background": true
+        "src": "/portfolio-site/icons/redux-icon.svg"
+      },
+      {
+        "name": "NodeJS",
+        "src": "/portfolio-site/icons/nodeJS-icon.svg"
+      },
+      {
+        "name": "ExpressJS",
+        "src": "/portfolio-site/icons/expressjs-icon.svg",
+        "background": false
       },
       {
         "name": "Spotify API",
         "src": "/portfolio-site/icons/spotify-icon.svg"
       }
     ],
-    "description": "This project was built using the Spotify API. Users can log in with their Spotify accounts, search for songs, albums, artists and playlists. The app displays real-time data from the user's Spotify library and integrates seamlessly with Spotify features like music playback and recommendations.",
+    "description": "This application was built using the Spotify API. Users can log in with their Spotify accounts, search for songs, albums, artists and playlists. The app displays real-time data from the user's Spotify library and integrates seamlessly with Spotify features like music playback and recommendations.",
     "external_links": [
       {
         "value": "Demo",
@@ -54,8 +60,7 @@
     "technologies": [
       {
         "name": "React",
-        "src": "/portfolio-site/icons/react-icon.svg",
-        "background": true
+        "src": "/portfolio-site/icons/react-icon.svg"
       },
       {
         "name": "Typescript",
@@ -64,18 +69,15 @@
       },
       {
         "name": "Tailwind",
-        "src": "/portfolio-site/icons/tailwind-icon.svg",
-        "background": true
+        "src": "/portfolio-site/icons/tailwind-icon.svg"
       },
       {
         "name": "Redux",
-        "src": "/portfolio-site/icons/redux-icon.svg",
-        "background": true
+        "src": "/portfolio-site/icons/redux-icon.svg"
       },
       {
         "name": "Firebase",
-        "src": "/portfolio-site/icons/firebase-icon.svg",
-        "background": true
+        "src": "/portfolio-site/icons/firebase-icon.svg"
       },
       {
         "name": "Free games API",
@@ -83,7 +85,7 @@
         "background": true
       }
     ],
-    "description": "This project is a free game platform built with React, Tailwind CSS, TypeScript, Firebase, and the Free Games API. The platform allows users to explore and discover free PC games, both browser-based and downloadable for Windows. Users can create an account to save their favorite games and manage game articles for future reference.",
+    "description": "This project is a platform that allows users to explore and discover free PC games, both browser-based and downloadable for Windows. Users can create an account to save their favorite games and manage game articles for future reference.",
     "external_links": [
       {
         "value": "Demo",
@@ -105,8 +107,7 @@
     "technologies": [
       {
         "name": "NodeJS",
-        "src": "/portfolio-site/icons/nodeJS-icon.svg",
-        "background": true
+        "src": "/portfolio-site/icons/nodeJS-icon.svg"
       },
       {
         "name": "ExpressJS",
@@ -129,6 +130,52 @@
       {
         "value": "Github",
         "href": "https://github.com/FriceIce/trullo"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Jobchaser",
+    "image": {
+      "src": "/portfolio-site/jobchaser-desktop.png",
+      "alt": "Jobchaser"
+    },
+    "technologies": [
+      {
+        "name": "React",
+        "src": "/portfolio-site/icons/react-icon.svg"
+      },
+      {
+        "name": "Typescript",
+        "src": "/portfolio-site/icons/typescript-icon.svg",
+        "background": false
+      },
+      {
+        "name": "CSS",
+        "src": "/portfolio-site/icons/css3-icon.svg"
+      },
+      {
+        "name": "Redux",
+        "src": "/portfolio-site/icons/redux-icon.svg"
+      },
+      {
+        "name": "Firebase",
+        "src": "/portfolio-site/icons/firebase-icon.svg"
+      },
+      {
+        "name": "Arbetsförmedlingen API",
+        "src": "https://gitlab.com/uploads/-/system/group/avatar/7094694/Arbetsf%C3%B6rmedlingen_Symbol.jpg?width=48"
+      }
+    ],
+    "description": "This application is a tool designed for job seekers, using the Arbetsförmedlingen API to access a wide range of job listings. It also allows users to sign in and save interesting job opportunities.",
+    "external_links": [
+      {
+        "value": "Demo",
+        "href": "https://friceice.github.io/Jobchaser/"
+      },
+      {
+        "value": "Github",
+        "href": "https://github.com/FriceIce/jobchaser"
       }
     ]
   }

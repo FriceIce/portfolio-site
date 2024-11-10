@@ -56,10 +56,6 @@
     "src": "/portfolio-site/icons/mongoDB-icon.svg"
   },
   {
-    "name": "GraphQL",
-    "src": "/portfolio-site/icons/graphql-icon.svg"
-  },
-  {
     "name": "VueJS",
     "src": "/portfolio-site/icons/vuejs-icon.svg"
   },
