@@ -80,6 +80,9 @@ const Header = ({
       isOpen ? 0 : 500
     );
     console.log(isOpen);
+
+    if (isOpen) body.style.overflow = "hidden";
+    if (!isOpen) body.style.overflow = "auto";
   }, [isOpen]);
 
   return (
