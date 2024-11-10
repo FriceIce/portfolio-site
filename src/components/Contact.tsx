@@ -20,11 +20,11 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-zinc-50 space-y-6 w-dvw h-full py-20 lg:py-60"
+      className="bg-zinc-50 space-y-6 w-dvw h-full py-20 lg:py-60 max-w-[1500px]"
     >
       <section className="">
         <p className="text-center text-xs lg:text-base">
-          Searching for opportunities
+          Thanks for viewing my portfolio.
         </p>
         <h2 className="text-5xl lg:text-6xl font-bold text-center">
           Let's connect
