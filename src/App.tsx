@@ -24,7 +24,7 @@ function App() {
   }, [menuOption]);
 
   return (
-    <div className="relative lg:space-y-20 h-dvh text-pretty">
+    <div className="relative lg:space-y-20 text-pretty">
       <Header setMenuOption={setMenuOption} />
       <main className="flex flex-col items-center gap-64 lg:gap-[500px] w-full">
         <Introduction setMenuOption={setMenuOption} />

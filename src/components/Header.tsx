@@ -59,13 +59,8 @@ const Header = ({
     { name: "Contact", value: "contact" },
   ];
 
-  //This useEffect is for mobile devices. It sets the bg color for the controls
   useEffect(() => {
     const body = document.body;
-    // setTimeout(
-    //   () => (body.style.backgroundColor = isOpen ? "#facc15" : "white"),
-    //   isOpen ? 0 : 500
-    // );
 
     if (isOpen) body.style.overflow = "hidden";
     if (!isOpen) body.style.overflow = "auto";
