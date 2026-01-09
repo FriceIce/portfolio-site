@@ -29,7 +29,7 @@ const linkVariants = {
   },
 };
 
-const menuOptionsVarients = {
+const menuOptionsVariants = {
   initial: {
     transition: {
       staggerChildren: 0.09,
@@ -119,7 +119,7 @@ const Header = ({
                 </button>
               </div>
               <motion.ul
-                variants={menuOptionsVarients}
+                variants={menuOptionsVariants}
                 initial="initial"
                 animate="open"
                 exit="initial"

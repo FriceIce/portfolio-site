@@ -7,22 +7,22 @@ const Introduction = ({
 }: {
   setMenuOption: Dispatch<React.SetStateAction<MenuOption>>;
 }) => {
-  const subtitle = ["Web Developer"];
+  const subtitle = ["Fullstack Developer"];
 
   return (
     <div
       id="home"
-      className="flex flex-col lg:flex-row items-center gap-4 lg:gap-12 pt-20"
+      className="flex flex-col lg:flex-row items-center gap-4 lg:gap-12 pt-20 px-4"
     >
       <img
         src="/portfolio-site/portfolio-pp.jfif"
         alt="profile image"
         className="size-48 md:size-64 rounded-full md:mb-9 object-cover"
       />
-      <div className="space-y-4">
-        <article className="w-[300px] sm:w-[490px] md:w-[600px]">
+      <div className="space-y-4 flex flex-col items-center">
+        <article className="w-[300px] sm:w-[490px] md:w-[750px] text-center">
           <h1 className="font-bold text-xl sm:text-3xl md:text-4xl">
-            Hi, I'm Isak, an aspiring
+            Hi, I'm Isak, a
           </h1>
           <h2 className="font-bold text-4xl sm:text-6xl md:text-7xl text-yellow-400">
             <ReactTyped strings={subtitle} typeSpeed={100} />
