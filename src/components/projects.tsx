@@ -5,7 +5,7 @@ const projects = () => {
   return (
     <div
       id="projects"
-      className="w-screen px-4 flex flex-col space-y-24 py-10 bg-zinc-50 max-w-[1500px]"
+      className="w-full px-4 flex flex-col space-y-24 py-10 bg-zinc-50 max-w-[1500px]"
     >
       <h2 className="text-6xl md:text-6xl font-bold w-max mx-auto pt-10">
         Projects
