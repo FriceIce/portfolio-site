@@ -2,30 +2,17 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Dispatch, useEffect, useState } from "react";
 import { MenuOption } from "../App";
 
-const menuVarients = {
-  initial: {
-    scaleY: 0,
-    opacity: 0,
-  },
-  animate: {
-    scaleY: 1,
+const menuVariants = {
+  initial: { height: 0, opacity: 0 },
+  animate: { 
+    height: "auto", 
     opacity: 1,
-    transition: {
-      duration: 0.5,
-      ease: [0.12, 0, 0.39, 0],
-    },
+    transition: { duration: 0.5, ease: [0.12, 0, 0.39, 0], }
   },
-  exit: {
-    scaleY: 0,
-    transition: {
-      duration: 0.3,
-      delay: 0.5,
-      easeOut: true,
-    },
-  },
+  exit: { height: 0, opacity: 0, transition: {duration: 0.3, delay: 0.5, easeOut: true} }
 };
 
-const linkVarients = {
+const linkVariants = {
   initial: {
     y: "30vh",
     transition: {
@@ -75,11 +62,10 @@ const Header = ({
   //This useEffect is for mobile devices. It sets the bg color for the controls
   useEffect(() => {
     const body = document.body;
-    setTimeout(
-      () => (body.style.backgroundColor = isOpen ? "#facc15" : "white"),
-      isOpen ? 0 : 500
-    );
-    console.log(isOpen);
+    // setTimeout(
+    //   () => (body.style.backgroundColor = isOpen ? "#facc15" : "white"),
+    //   isOpen ? 0 : 500
+    // );
 
     if (isOpen) body.style.overflow = "hidden";
     if (!isOpen) body.style.overflow = "auto";
@@ -87,14 +73,15 @@ const Header = ({
 
   return (
     <header
-      className={`sticky inset-0 z-[2] flex items-center justify-between h-16 p-4
-      ${isOpen ? "bg-yellow-400" : "bg-white"}`}
+      className={`sticky inset-0 flex items-center justify-between h-16 p-4 bg-white`}
     >
-      <div className="flex items-center gap-2">
-        <div className="bg-yellow-400 rounded-full size-4" />
-        <button className="text-xl" onClick={() => window.location.reload()}>
-          Isak Tilahun
-        </button>
+      <div className="flex items-center gap-2 h-16">
+        <div className="relative z-[11] flex items-center gap-1">
+          <div className={`rounded-full size-4 ${isOpen ? 'bg-black border border-yellow-400' : 'transition-all delay-500 bg-yellow-400'}`} />
+          <button className="text-xl" onClick={() => window.location.reload()}>
+            Isak Tilahun
+          </button>
+        </div>
       </div>
 
       <div>
@@ -125,14 +112,13 @@ const Header = ({
         <AnimatePresence>
           {isOpen && (
             <motion.nav
-              variants={menuVarients}
+              variants={menuVariants}
               initial="initial"
               animate="animate"
               exit="exit"
-              className="fixed inset-0 bg-yellow-400 flex flex-col gap-4 h-full origin-top"
+              className="fixed inset-0 z-10 bg-yellow-400 flex flex-col gap-4 h-full origin-top"
             >
-              <div className="flex justify-between items-center p-4 h-16">
-                <h1 className="text-xl">Isak Tilahun</h1>
+              <div className="flex justify-end w-full p-4 h-16">
                 <button onClick={toggleMenu} className="text-xl">
                   Close
                 </button>
@@ -147,7 +133,7 @@ const Header = ({
                 {menuOptions.map((option, index) => {
                   return (
                     <div className="overflow-hidden">
-                      <motion.div variants={linkVarients} className="">
+                      <motion.div variants={linkVariants} className="">
                         <button
                           key={index}
                           className={`md:hidden text-5xl uppercase text-black`}

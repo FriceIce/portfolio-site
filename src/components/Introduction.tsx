@@ -15,7 +15,7 @@ const Introduction = ({
       className="flex flex-col lg:flex-row items-center gap-4 lg:gap-12 pt-20"
     >
       <img
-        src="/portfolio-site/porfolio-pp.jfif"
+        src="/portfolio-site/portfolio-pp.jfif"
         alt="profile image"
         className="size-48 md:size-64 rounded-full md:mb-9 object-cover"
       />
