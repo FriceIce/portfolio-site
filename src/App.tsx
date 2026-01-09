@@ -24,14 +24,14 @@ function App() {
   }, [menuOption]);
 
   return (
-    <div className="relative lg:space-y-20 w-full text-pretty">
+    <div className="relative lg:space-y-20 h-dvh text-pretty">
       <Header setMenuOption={setMenuOption} />
-      <div className="flex flex-col items-center gap-64 lg:gap-[500px] px-4">
+      <main className="flex flex-col items-center gap-64 lg:gap-[500px] w-full">
         <Introduction setMenuOption={setMenuOption} />
         <Projects />
         <About />
         <Contact />
-      </div>
+      </main>
     </div>
   );
 }

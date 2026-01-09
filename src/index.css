@@ -39,8 +39,6 @@
 body {
   overflow-x: hidden;
   position: relative;
-  height: 100dvh;
-  width: 100vw;
   max-width: 1500px;
   margin-inline: auto;
   font-family: "Plus Jakarta Sans", "Poppins", "arial", sans-serif;

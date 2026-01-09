@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="bg-zinc-50 space-y-6 w-dvw h-full py-20 lg:py-60 max-w-[1500px]"
+      className="bg-zinc-50 space-y-6 w-full h-full py-20 lg:py-60 max-w-[1500px]"
     >
       <section className="">
         <p className="text-center text-xs lg:text-base">
