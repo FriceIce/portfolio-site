@@ -1,5 +1,52 @@
 [
   {
+    "id": 0,
+    "title": "Movie Project",
+    "image": {
+      "src": "/portfolio-site/movie-project-desktop.png",
+      "alt": "Movie project on laptop device"
+    },
+    "technologies": [
+      {
+        "name": "Next.js",
+        "src": "/portfolio-site/icons/nextjs-icon.svg"
+      },
+      {
+        "name": "Typescript",
+        "src": "/portfolio-site/icons/typescript-icon.svg",
+        "background": false
+      },
+      {
+        "name": "Tailwind",
+        "src": "/portfolio-site/icons/tailwind-icon.svg"
+      },
+      {
+        "name": "NodeJS",
+        "src": "/portfolio-site/icons/nodeJS-icon.svg"
+      },
+      {
+        "name": "ExpressJS",
+        "src": "/portfolio-site/icons/expressjs-icon.svg",
+        "background": false
+      },
+      {
+        "name": "TMDB API",
+        "src": "/portfolio-site/icons/tmdb-icon.svg"
+      }
+    ],
+    "description": "Discover interesting movies and series powered by the TMDB API.",
+    "external_links": [
+      {
+        "value": "Demo",
+        "href": "https://tmdb-movie-project.vercel.app/"
+      },
+      {
+        "value": "Github",
+        "href": "https://github.com/FriceIce/movie-project"
+      }
+    ]
+  },
+  {
     "id": 1,
     "title": "Spotify web",
     "image": {
