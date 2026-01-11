@@ -9,11 +9,6 @@ const contactInfo: { type: string; src: string; href: string }[] = [
     src: "/portfolio-site/icons/linkedin-icon.svg",
     href: "https://www.linkedin.com/in/isak-tilahun-27b242280/",
   },
-  {
-    type: "Instagram",
-    src: "/portfolio-site/icons/instagram-icon.svg",
-    href: "https://www.instagram.com/letzgochamp/",
-  },
 ];
 
 const Contact = () => {
@@ -38,7 +33,7 @@ const Contact = () => {
                 <a
                   href={contact.href}
                   rel="noreferrer"
-                  target="_blank"
+                  target={contact.type === "Email" ? "_self" : "_blank"}
                   className="flex items-center gap-1"
                 >
                   <img

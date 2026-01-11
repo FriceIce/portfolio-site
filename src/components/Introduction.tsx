@@ -31,11 +31,13 @@ const Introduction = ({
         <div className="space-y-4 w-[265px]">
           <div className="group flex flex-row-reverse gap-4 font-semibold text-sm w-max mx-auto">
             <a
-              href="./CV-Isak-Tilahun.pdf"
-              download
-              className="border border-transparent transition-all bg-yellow-400 md:hover:scale-105 px-4 py-3 rounded-full cursor-pointer"
+              role="button"
+              href="./CV, Isak Tilahun, Software Developer, ENG.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-transparent transition-all bg-yellow-400 md:hover:scale-105 px-4 py-3 rounded-full"
             >
-              Download CV
+              Open CV
             </a>
             <button
               className="border border-black transition-all px-4 py-3 rounded-full md:hover:scale-105 cursor-pointer"
