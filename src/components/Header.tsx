@@ -127,12 +127,13 @@ const Header = ({
               >
                 {menuOptions.map((option, index) => {
                   return (
-                    <div className="overflow-hidden">
-                      <motion.div variants={linkVariants} className="">
+                    <li key={option.value} className="overflow-hidden">
+                      <motion.div variants={linkVariants}>
                         <button
                           key={index}
                           className={`md:hidden text-5xl uppercase text-black`}
                           onClick={() => {
+                            console.log(option.value)
                             setMenuOption(option.value);
                             setIsOpen(false);
                           }}
@@ -140,7 +141,7 @@ const Header = ({
                           {option.name}
                         </button>
                       </motion.div>
-                    </div>
+                    </li>
                   );
                 })}
               </motion.ul>

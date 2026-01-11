@@ -1,26 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
 import Projects from "./components/projects";
-import useIsMounted from "./hooks/useIsMounted";
 
 export type MenuOption = "home" | "projects" | "about" | "contact" | null;
 function App() {
   const [menuOption, setMenuOption] = useState<MenuOption>(null);
 
-  useIsMounted(() => {
+  useEffect(() => {
     if (!menuOption) return;
 
-    const selectedMenuOptionElement = document.getElementById(
-      `${menuOption}`
-    ) as HTMLButtonElement;
+    const scrollToElement = () => {
+      const element = document.getElementById(menuOption);
 
-    selectedMenuOptionElement.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+        
+      }
+    };
+
+    // Wait 100 ms before scrolling to element
+    const timeoutId = setTimeout(scrollToElement, 100);
+    return () => clearTimeout(timeoutId);
   }, [menuOption]);
 
   return (
