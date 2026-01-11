@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import technologies from "../../public/database/technologies.json";
+import technologies from "../database/technologies.json";
 
 const paraph = [
   "I’m currently studying to become a full-stack developer at Chas Academy, with the goal of becoming a professional web developer. My passion for technology, combined with my strong curiosity, drives me to constantly learn and improve. I'm not afraid to ask questions, and my natural problem-solving skills, honed through my current role as a tire technician, help me tackle challenges with determination and creativity.",

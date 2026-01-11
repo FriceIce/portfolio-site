@@ -1,4 +1,4 @@
-import allProjects from "../../public/database/projects.json";
+import allProjects from "../database/projects.json";
 import { motion } from "framer-motion";
 
 const projects = () => {
