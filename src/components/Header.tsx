@@ -133,7 +133,6 @@ const Header = ({
                           key={index}
                           className={`md:hidden text-5xl uppercase text-black`}
                           onClick={() => {
-                            console.log(option.value)
                             setMenuOption(option.value);
                             setIsOpen(false);
                           }}

@@ -4,27 +4,30 @@ import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
 import Projects from "./components/projects";
+import useMediaQueries from "./hooks/useMediaQueries";
 
 export type MenuOption = "home" | "projects" | "about" | "contact" | null;
 function App() {
   const [menuOption, setMenuOption] = useState<MenuOption>(null);
+  const isDesktop = useMediaQueries(1024); 
 
   useEffect(() => {
     if (!menuOption) return;
 
     const scrollToElement = () => {
-      const element = document.getElementById(menuOption);
+    const element = document.getElementById(menuOption);
 
-      if (element) {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-        
+    if (element) {
+      element.scrollIntoView({
+        behavior: !isDesktop ? "instant" : "smooth",
+        block: "start",
+      });
+
+        // Makes it possible to navigate to the same menu option twice
+        setMenuOption(null);
       }
     };
 
-    // Wait 100 ms before scrolling to element
     const timeoutId = setTimeout(scrollToElement, 100);
     return () => clearTimeout(timeoutId);
   }, [menuOption]);
