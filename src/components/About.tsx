@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import technologies from "../database/technologies.json";
 
 const paraph = [
-  "I’m currently studying to become a full-stack developer at Chas Academy, with the goal of becoming a professional web developer. My passion for technology, combined with my strong curiosity, drives me to constantly learn and improve. I'm not afraid to ask questions, and my natural problem-solving skills, honed through my current role as a tire technician, help me tackle challenges with determination and creativity.",
-  "What I'm most proud of isn't just the projects I’ve chosen to showcase here, but the courage I’ve shown in taking the leap into a completely new career field. Making the switch from a hands-on, technical job to the world of coding has been both exciting and rewarding. Through this journey, I’ve learned that my curiosity and willingness to dive into the unknown are my greatest strengths.",
+  [`I am a Full-stack Developer driven by a deep passion for technology and an innate curiosity for how things work. I thrive on solving complex problems and am constantly refining my craft to build efficient, creative solutions. I’m never afraid to ask the hard questions or dive deep into new technologies to ensure the best possible outcome for every project.`],
+  
+  [`What I take the most pride in is not just the code I write, but the courage and determination I’ve shown in pivoting my career. Transitioning from a technical, hands-on role as a tire technician into the world of software development has been an incredibly rewarding journey. This background has gifted me with a unique perspective on troubleshooting and a relentless "get-it-done" attitude.`],
+  [ `I’ve learned that my greatest strengths are my adaptability and my willingness to embrace the unknown. I don't just write code; I apply a lifelong habit of technical problem-solving to create impactful digital experiences.`],
 ];
 
 const techVariant = {
@@ -30,7 +32,7 @@ const About = () => {
         <div className="space-y-2">
           {paraph.map((text, index) => {
             return (
-              <p key={index} className="text-sm lg:text-lg leading-relaxed">
+              <p key={index} className="text-sm lg:text-lg">
                 {text}
               </p>
             );
@@ -52,7 +54,7 @@ const About = () => {
                 whileInView="animate"
                 viewport={{ once: true }}
                 key={index}
-                className="flex items-center gap-2 bg-[#f9fafb] px-4 py-2 rounded shadow-md"
+                className="z-[-1] flex items-center gap-2 bg-[#f9fafb] px-4 py-2 rounded shadow-md"
               >
                 <img
                   src={tech.src}

@@ -66,5 +66,9 @@
   {
     "name": "Github",
     "src": "/portfolio-site/icons/github.svg"
+  },
+  {
+    "name": "Heroku",
+    "src": "/portfolio-site/icons/heroku.svg"
   }
 ]
