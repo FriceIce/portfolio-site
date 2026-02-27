@@ -32,7 +32,7 @@ const Introduction = ({
           <div className="group flex flex-row-reverse gap-4 font-semibold text-sm w-max mx-auto">
             <a
               role="button"
-              href="./CV, Isak Tilahun, Software Developer, ENG.pdf"
+              href="./CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-transparent transition-all bg-yellow-400 md:hover:scale-105 px-4 py-3 rounded-full"

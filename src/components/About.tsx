@@ -2,10 +2,9 @@ import { motion } from "framer-motion";
 import technologies from "../database/technologies.json";
 
 const paraph = [
-  [`I am a Full-stack Developer driven by a deep passion for technology and an innate curiosity for how things work. I thrive on solving complex problems and am constantly refining my craft to build efficient, creative solutions. I’m never afraid to ask the hard questions or dive deep into new technologies to ensure the best possible outcome for every project.`],
+  [`I am a Fullstack Developer who simply loves figuring out how things work and building technology that solves real problems. I thrive on solving complex problems and am constantly refining my craft to build efficient, creative solutions. I’m never afraid to ask the hard questions or dive deep into new technologies to ensure the best possible outcome for every project.`],
   
-  [`What I take the most pride in is not just the code I write, but the courage and determination I’ve shown in pivoting my career. Transitioning from a technical, hands-on role as a tire technician into the world of software development has been an incredibly rewarding journey. This background has gifted me with a unique perspective on troubleshooting and a relentless "get-it-done" attitude.`],
-  [ `I’ve learned that my greatest strengths are my adaptability and my willingness to embrace the unknown. I don't just write code; I apply a lifelong habit of technical problem-solving to create impactful digital experiences.`],
+  [`What I take the most pride in is the courage I’ve shown in deciding to pivot my career. I am currently transitioning from a technical, hands-on role as a tire technician into software development. While I am now actively seeking my first role in the industry, I carry with me a unique perspective on troubleshooting and a relentless 'get-it-done' attitude that defines my approach to every line of code I write.`],
 ];
 
 const techVariant = {
