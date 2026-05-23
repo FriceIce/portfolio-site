@@ -1,44 +1,72 @@
-import { Dispatch } from "react";
-import { ReactTyped } from "react-typed";
+import { Dispatch, useRef } from "react";
 import { MenuOption } from "../App";
+
+// GSAP
+import {gsap} from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { SplitText } from "gsap/SplitText";
+gsap.registerPlugin(SplitText)
+
 
 const Introduction = ({
   setMenuOption,
 }: {
   setMenuOption: Dispatch<React.SetStateAction<MenuOption>>;
 }) => {
-  const subtitle = ["Fullstack Developer"];
+  const titleRef = useRef<HTMLHeadingElement>(null)
+  const subTitleRef = useRef<HTMLSpanElement>(null)
+  const miniContainerRef = useRef<HTMLDivElement>(null)
+  
+  useGSAP(() => {
+    if (!titleRef.current) return;
+    
+    const split = new SplitText(subTitleRef.current, { type: "chars, words" }); 
+    const timeline = gsap.timeline();
+
+    timeline.from(titleRef.current, {
+      y: 100,  
+      opacity: 0,
+      duration: 1.2,
+      ease: "power4.out",
+    })
+    .from(split.chars, {
+      y: 100,            
+      opacity: 0,
+      scale: 0.5,
+      stagger: 0.02,      
+      duration: 1.2,
+      ease: "power4.out",
+    }, "<0.1")
+    .from(miniContainerRef.current, {
+      y: 100,
+      opacity: 0, 
+      scale: 0.2,
+      duration: 1.2,
+      ease:"power4.out"
+    }, "<0.1")
+    
+  },{ scope: titleRef }); 
 
   return (
     <div
       id="home"
       className="flex flex-col lg:flex-row items-center gap-4 lg:gap-12 pt-20 px-4"
     >
-      <img
-        src="/portfolio-site/portfolio-pp.jfif"
-        alt="profile image"
-        className="size-48 md:size-64 rounded-full md:mb-9 object-cover"
-      />
       <div className="space-y-4 flex flex-col items-center">
-        <article className="w-[300px] sm:w-[490px] md:w-[750px] text-center">
-          <h1 className="font-bold text-xl sm:text-3xl md:text-4xl">
+        <article className="text-center overflow-hidden">
+          <h1 ref={titleRef} className="font-bold">
             Hi, I'm Isak, a
+            <span ref={subTitleRef} className="block font-bold text-yellow-400">
+              Fullstack Developer
+            </span>
           </h1>
-          <h2 className="font-bold text-4xl sm:text-6xl md:text-7xl text-yellow-400">
-            <ReactTyped strings={subtitle} typeSpeed={100} />
-          </h2>
         </article>
         <div className="space-y-4 w-[265px]">
-          <div className="group flex flex-row-reverse gap-4 font-semibold text-sm w-max mx-auto">
-            <a
-              role="button"
-              href="./CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="border border-transparent transition-all bg-yellow-400 md:hover:scale-105 px-4 py-3 rounded-full"
-            >
-              Open CV
-            </a>
+          <div ref={miniContainerRef} className="group flex flex-row-reverse gap-4 font-semibold text-sm w-max mx-auto">
+            <button className="border border-transparent transition-all bg-yellow-400 md:hover:scale-105 px-4 py-3 rounded-full"
+             onClick={() => setMenuOption("contact")}>
+              Contact me
+            </button>
             <button
               className="border border-black transition-all px-4 py-3 rounded-full md:hover:scale-105 cursor-pointer"
               onClick={() => setMenuOption("projects")}

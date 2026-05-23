@@ -4,12 +4,10 @@ import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Introduction from "./components/Introduction";
 import Projects from "./components/projects";
-import useMediaQueries from "./hooks/useMediaQueries";
 
 export type MenuOption = "home" | "projects" | "about" | "contact" | null;
 function App() {
   const [menuOption, setMenuOption] = useState<MenuOption>(null);
-  const isDesktop = useMediaQueries(1024); 
 
   useEffect(() => {
     if (!menuOption) return;
@@ -19,7 +17,7 @@ function App() {
 
     if (element) {
       element.scrollIntoView({
-        behavior: !isDesktop ? "instant" : "smooth",
+        behavior: "instant",
         block: "start",
       });
 

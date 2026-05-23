@@ -68,13 +68,13 @@ const Header = ({
 
   return (
     <header
-      className={`sticky inset-0 flex items-center justify-between h-16 p-4 bg-white`}
+      className={`sticky inset-0 flex items-center justify-between h-16 p-4 bg-white z-20`}
     >
       <div className="flex items-center gap-2 h-16">
         <div className="relative z-[11] flex items-center gap-1">
           <div className={`rounded-full size-4 ${isOpen ? 'bg-black border border-yellow-400' : 'transition-all delay-500 bg-yellow-400'}`} />
           <button className="text-xl" onClick={() => window.location.reload()}>
-            Isak Tilahun
+            Isak T
           </button>
         </div>
       </div>
@@ -111,7 +111,7 @@ const Header = ({
               initial="initial"
               animate="animate"
               exit="exit"
-              className="fixed inset-0 z-10 bg-yellow-400 flex flex-col gap-4 h-full origin-top"
+              className="fixed inset-0 bg-yellow-400 flex flex-col gap-4 h-full origin-top"
             >
               <div className="flex justify-end w-full p-4 h-16">
                 <button onClick={toggleMenu} className="text-xl">
