@@ -31,29 +31,20 @@ const About = () => {
   const paraphContRef = useRef<HTMLDivElement>(null);
   useGSAP(() => {
     if(!paraphContRef.current) return; 
+    
+    const timeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: paraphContRef.current,
+        start: "top 80%",
+      }
+    }); 
 
-    const targets = gsap.utils.toArray<HTMLDivElement>(paraphContRef.current); 
-
-    targets.forEach((element) => {
-      const text = element.querySelectorAll(".text"); 
-
-      if(text.length === 0) return; 
-
-      const timeline =gsap.timeline({
-        scrollTrigger: {
-          trigger: element,
-          start: "top 80%",
-        }
-      }); 
-
-      text.forEach((paraph) => {
-        timeline.from(paraph, {
-          y: 50,
-          opacity: 0,
-          duration: 1.5,
-          ease: "power4.out"
-        }, "<0.2")
-      })
+    timeline.from(".text", {
+      y: 50,
+        opacity: 0,
+        duration: 1.5,
+        ease: "power4.out",
+        stagger: 0.2
     })
 
   }, {scope: paraphContRef})
