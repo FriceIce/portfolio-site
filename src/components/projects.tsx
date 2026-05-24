@@ -23,14 +23,14 @@ const projects = () => {
       
       if(!img || !text) return; 
       
-      const timeLine = gsap.timeline({
+      const timeline = gsap.timeline({
         scrollTrigger: {
           trigger: card, 
           start: "top 70%"
         }
       })
 
-      timeLine.from(img, {
+      timeline.from(img, {
         x: -100,
         opacity: 0,
         duration: 1,
