@@ -1,6 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { Dispatch, useEffect, useState } from "react";
+import { Dispatch, useEffect, useRef, useState } from "react";
 import { MenuOption } from "../App";
+
+import { gsap } from "gsap"
+import { useGSAP } from "@gsap/react";
 
 const menuVariants = {
   initial: { height: 0, opacity: 0 },
@@ -66,6 +69,25 @@ const Header = ({
     if (!isOpen) body.style.overflow = "auto";
   }, [isOpen]);
 
+
+  const navRef = useRef<HTMLElement>(null)
+
+  useGSAP(() => {
+    if(!navRef.current) return; 
+
+    const timeline = gsap.timeline(); 
+
+    // GSAP will automatically search for every .nav-li inside the navRef scope
+    timeline.from(".nav-li", {
+      x: (index: number) => (index % 2 !== 0 ? 100 : -100),
+      y: (index: number) => (index % 2 !== 0 ? 100 : -100),
+      opacity: 0,
+      duration: 1.5,
+      ease: "power4.out",
+      stagger: 0.2 
+    });
+
+  }, {scope: navRef})
   return (
     <header
       className={`sticky inset-0 flex items-center justify-between h-16 p-4 bg-white z-20`}
@@ -85,11 +107,11 @@ const Header = ({
         </button>
 
         {!isOpen && (
-          <nav className="">
-            <ul className="flex gap-4">
+          <nav ref={navRef}>
+            <ul className="ul flex gap-4">
               {menuOptions.map((option, index) => {
                 return (
-                  <li key={index} className="">
+                  <li key={index} className="nav-li">
                     <button
                       key={index}
                       className={`hidden md:block text-xl uppercase text-black`}
