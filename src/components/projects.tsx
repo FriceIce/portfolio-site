@@ -1,7 +1,53 @@
 import allProjects from "../database/projects.json";
-import { motion } from "framer-motion";
+
+// GSAP
+import { gsap } from "gsap"; 
+import { useGSAP } from "@gsap/react"
+import { useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger"; 
+
+gsap.registerPlugin(ScrollTrigger);
 
 const projects = () => {
+  const containerRef = useRef<HTMLUListElement>(null)
+  const projectCardRef = useRef<HTMLLIElement>(null)
+  
+  useGSAP(() => {
+    if(!containerRef.current) return;
+
+    const targets = gsap.utils.toArray<HTMLElement>(".project-card");
+    
+    targets.forEach((card) => {
+      const img = card.querySelector(".project-img");
+      const text = card.querySelector(".project-text");
+      
+      if(!img || !text) return; 
+      
+      const timeLine = gsap.timeline({
+        scrollTrigger: {
+          trigger: card, 
+          start: "top 70%"
+        }
+      })
+
+      timeLine.from(img, {
+        x: -100,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {} ,
+        ease: "power4.out",
+      })
+      .from(text, {
+        y: 100,
+        opacity: 0,
+        duration: 1, 
+        ease: "power4.out",
+      }, "<0.2")
+
+    })
+
+  }, {scope: containerRef})
+
   return (
     <div
       id="projects"
@@ -12,24 +58,24 @@ const projects = () => {
       </h2>
 
       <section>
-        <ul className={`mx-auto flex flex-col gap-32 lg:gap-64 items-center`}>
+        <ul ref={containerRef} className={`mx-auto flex flex-col gap-32 lg:gap-64 items-center`}>
           {allProjects.map((project) => {
             return (
-              <motion.li
-                initial={{ opacity: 0, y: 50, scaleY: 0.9, scaleX: 0.9 }}
-                whileInView={{ opacity: 1, y: 0, scaleY: 1, scaleX: 1 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
+              <li
+              ref={projectCardRef}
                 key={project.id}
-                className="flex flex-col gap-6 lg:gap-10 lg:flex-row mx-auto"
+                className="project-card flex flex-col gap-6 lg:gap-6 lg:flex-row mx-auto"
               >
-                <img
-                  src={project.image.src}
-                  alt={project.image.alt}
-                  className="object-contain my-auto h-[243px] lg:h-[350px]"
-                />
 
-                <div className="space-y-5 max-w-[500px]">
+                <div className="project-img border-4 mx-auto rounded border-yellow-400 size-fit">
+                  <img
+                    src={project.image.src}
+                    alt={project.image.alt}
+                    className="object-cover object-left size-[300px] lg:size-[400px] rounded"
+                  />
+                </div>
+
+                <div className="project-text space-y-5 max-w-[500px]">
                   <h3 className="text-3xl lg:text-5xl mx-auto lg:mx-0 w-max font-extrabold">
                     {project.title}
                   </h3>
@@ -42,7 +88,7 @@ const projects = () => {
                         return (
                           <li
                             key={index}
-                            className={`flex items-center bg-[#f0f0f0] py-2 px-3 rounded shadow
+                            className={`flex items-center bg-[#f0f0f0ss] py-1 px-3 rounded-full border
                           ${
                             tech.name === "MongoDB"
                               ? "gap-0 flex-row-reverse"
@@ -66,9 +112,9 @@ const projects = () => {
                       })}
                     </ul>
                   </section>
-                  <p className="text-sm lg:text-base leading-relaxed lg:leading-loose">
+                  {/* <p className="text-sm lg:text-base leading-relaxed lg:leading-loose">
                     {project.description}
-                  </p>
+                  </p> */}
                   <div className="space-x-4">
                     {project.external_links.map((obj, index) => {
                       return (
@@ -84,7 +130,7 @@ const projects = () => {
                     })}
                   </div>
                 </div>
-              </motion.li>
+              </li>
             );
           })}
         </ul>
