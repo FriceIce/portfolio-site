@@ -70,27 +70,6 @@ const Header = ({
     if (!isOpen) body.style.overflow = "auto";
   }, [isOpen]);
 
-
-  // GSAP
-  const navRef = useRef<HTMLElement>(null)
-  const isDesktopView = useMediaQueries(1024);
-
-  useGSAP(() => {
-    if(!navRef.current || !isDesktopView) return; 
-
-    const timeline = gsap.timeline(); 
-
-    // GSAP will automatically search for every .nav-li inside the navRef scope
-    timeline.from(".nav-li", {
-      x: (index: number) => (index % 2 !== 0 ? 100 : -100),
-      y: (index: number) => (index % 2 !== 0 ? 100 : -100),
-      opacity: 0,
-      duration: 1.5,
-      ease: "power4.out",
-      stagger: 0.2 
-    });
-
-  }, {scope: navRef})
   return (
     <header
       className={`sticky inset-0 flex items-center justify-between h-16 p-4 bg-white z-20`}
@@ -110,7 +89,7 @@ const Header = ({
         </button>
 
         {!isOpen && (
-          <nav ref={navRef}>
+          <nav>
             <ul className="ul flex gap-4">
               {menuOptions.map((option, index) => {
                 return (

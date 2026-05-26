@@ -61,7 +61,7 @@ const projects = () => {
       </h2>
 
       <section>
-        <ul ref={containerRef} className={`mx-auto flex flex-col gap-32 lg:gap-64 items-center`}>
+        <ul ref={containerRef} className={`mx-auto flex flex-col gap-32 lg:gap-64 items-center overflow-hidden`}>
           {allProjects.map((project) => {
             return (
               <li
