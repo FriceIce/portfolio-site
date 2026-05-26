@@ -4,6 +4,7 @@ import { MenuOption } from "../App";
 
 import { gsap } from "gsap"
 import { useGSAP } from "@gsap/react";
+import useMediaQueries from "../hooks/useMediaQueries";
 
 const menuVariants = {
   initial: { height: 0, opacity: 0 },
@@ -70,10 +71,12 @@ const Header = ({
   }, [isOpen]);
 
 
+  // GSAP
   const navRef = useRef<HTMLElement>(null)
+  const isDesktopView = useMediaQueries(1024);
 
   useGSAP(() => {
-    if(!navRef.current) return; 
+    if(!navRef.current || !isDesktopView) return; 
 
     const timeline = gsap.timeline(); 
 

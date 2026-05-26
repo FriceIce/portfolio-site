@@ -16,8 +16,10 @@ const projects = () => {
     if(!containerRef.current) return;
 
     const targets = gsap.utils.toArray<HTMLElement>(".project-card");
+
     
-    targets.forEach((card) => {
+    
+    targets.forEach((card: HTMLElement, index: number) => {
       const img = card.querySelector(".project-img");
       const text = card.querySelector(".project-text");
       
@@ -26,12 +28,13 @@ const projects = () => {
       const timeline = gsap.timeline({
         scrollTrigger: {
           trigger: card, 
-          start: "top 70%"
+          start: "top center",
+          end: "bottom center",
         }
       })
 
       timeline.from(img, {
-        x: -100,
+        x: () => (index % 2 !== 0 ? 100 : -100),
         opacity: 0,
         duration: 1,
         scrollTrigger: {} ,

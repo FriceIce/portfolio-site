@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function useMediaQueries(screenWidth: number) {
+function useMediaQueries(screenWidth: 640 | 768 | 1024 | 1280 | 1536) {
     const [screen, setScreen] = useState<boolean>(false); 
     
     useEffect(() => {
@@ -8,6 +8,7 @@ function useMediaQueries(screenWidth: number) {
 
         function handleChange () {
             setScreen(media.matches)
+            console.log(media.matches)
         }
 
         // Call the function to update the state
